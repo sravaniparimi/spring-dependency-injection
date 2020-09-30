@@ -1,0 +1,15 @@
+VEHICLE
+
+package com.jnit;
+
+public interface Vehicle {
+void move();
+}
+
+JOURNEY
+
+package com.jnit;
+
+public interface Journey {
+void startJourney();
+}
