@@ -1,0 +1,78 @@
+TRAVEL
+
+package com.jnit;
+
+public class Travel implements Journey {
+Vehicle v;
+
+
+	public Vehicle getV() {
+	return v;
+}
+
+
+public void setV(Vehicle v) {
+	this.v = v;
+}
+
+
+	@Override
+	public void startJourney() {
+		v.move();
+	}
+	
+
+}
+
+CAR
+
+package com.jnit;
+
+public class Car implements Vehicle {
+private String fuelType;
+private int Speed;
+public String getFuelType() {
+	return fuelType;
+}
+public void setFuelType(String fuelType) {
+	this.fuelType = fuelType;
+}
+public int getSpeed() {
+	return Speed;
+}
+public void setSpeed(int speed) {
+	Speed = speed;
+}
+public void move() {
+	System.out.println("Car has Started");
+	System.out.println("FuelType"+fuelType);
+	System.out.println("Speed"+Speed);
+	
+}
+}
+
+BUS
+
+package com.jnit;
+
+public class Bus implements Vehicle{
+	private String fuelType;
+	private int Speed;
+	public String getFuelType() {
+		return fuelType;
+	}
+	public void setFuelType(String fuelType) {
+		this.fuelType = fuelType;
+	}
+	public int getSpeed() {
+		return Speed;
+	}
+	public void setSpeed(int speed) {
+		Speed = speed;
+	}
+	public void move() {
+		System.out.println("Bus has Started");
+		System.out.println("FuelType"+fuelType);
+		System.out.println("Speed"+Speed);
+}
+}
